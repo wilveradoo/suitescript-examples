@@ -1,0 +1,7 @@
+{
+  "name": "suitescript-examples",
+  "version": "1.0.0",
+  "description": "SuiteScript 2.1 examples for a fictional B2B distributor",
+  "scripts": { "test": "node --test" },
+  "license": "MIT"
+}

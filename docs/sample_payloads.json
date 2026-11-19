@@ -1,0 +1,18 @@
+{
+  "createOrder": {
+    "externalOrderId": "WEB-100245",
+    "customer": { "email": "compras@hotelcumbresdelsur.example", "name": "Hotel Cumbres del Sur S.A." },
+    "location": "Buenos Aires",
+    "shippingMethod": "Standard",
+    "items": [
+      { "sku": "AMN-SHAMP-30ML", "quantity": 1200 },
+      { "sku": "AMN-JABON-25G", "quantity": 1500 },
+      { "sku": "LIN-TOALLA-70X140", "quantity": 80 }
+    ]
+  },
+  "responses": {
+    "created": { "success": true, "code": "CREATED", "data": { "salesOrderId": 48213, "externalOrderId": "WEB-100245" } },
+    "retry": { "success": true, "code": "DUPLICATE_ORDER", "data": { "id": "48213", "tranid": "SO10458", "status": "Pending Fulfillment" } },
+    "outOfStock": { "success": false, "code": "OUT_OF_STOCK", "message": "Insufficient stock", "details": [ { "sku": "LIN-TOALLA-70X140", "requested": 80, "available": 35 } ] }
+  }
+}
